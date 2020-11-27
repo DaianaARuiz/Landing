@@ -110,6 +110,13 @@
                 </div>
             </div>
         </section>
+        <!--OVERLAY-->
+        <section class="overlay">
+            <div class="overlay__contenedor">
+                <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                <img src="img/img1.jpg" alt="">
+            </div>
+        </section>
         <section class="clientes contenedor">
             <h2 class="titulo">Que dicen nuestros clientes</h2>
             <div class="cards">
@@ -151,6 +158,47 @@
                 </div>
             </div>
         </section>
+        <section class="contacto" id="contacto ">
+			<div class="contenedor-contacto-izq">
+				<div class="titulo-contacto">
+					<h6>Contacto</h6>
+				</div>
+				<div class="contacto-redesSociales">
+				  	<i class="far fa-envelope"></i> 			
+
+					<a href="https://www.instagram.com/kndsol__/" class="ig" target="_blank">
+						<i class="fab fa-instagram"></i>
+						@kndsol__
+					</a>	
+			    </div>
+		    </div>
+				
+			<div class="contacto-contenido">
+				<div class="formulario-contenido">
+					<form action="procesar.php" method="POST">
+						<label form="nombre">
+							Nombre: <input type="text" name="nombre" placeholder="Escriba aquí su nombre" id="nombre" maxlength="15" required autofocus autocomplete="on">	
+						</label>
+							<br>
+						<label form="email">
+							Email: <input type="email" name="email" placeholder="example@gmail.com" id="email" required autofocus autocomplete="on">	
+						</label>
+							<br>
+						<label form="mensaje">
+							Mensaje: 
+						<textarea name="mensaje" id="mensaje" autofocus required placeholder="¡Envíame tu consulta!"></textarea>
+						</label form="envio">
+							<br>
+						<input type="submit" value="Enviar" name="enviar" id="envio">
+						<div class="mensaje-form">
+						    <p>Escríbenos un mensaje, con gusto te responderemos a la brevedad </p>
+						</div>
+							
+					</form>
+				</div>
+			</div>
+			</div>
+		</section>
     </main>
     <footer>
         <div class="contenedor-footer">
@@ -169,6 +217,8 @@
         </div>
         <h2 class="titulo-final">Koya Web || 2020 </h2>
     </footer>
+    <script src="https://kit.fontawesome.com/2d78e61024.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
