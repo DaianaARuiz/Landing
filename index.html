@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Plantilla Koya Web</title>
     <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
 </head>
@@ -91,20 +92,57 @@
         <section class="clientes contenedor">
             <h2 class="titulo">Que dicen nuestros clientes</h2>
             <div class="cards">
-                <div class="card">
-                    <img src="img/face1.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                <button aria-label="Anterior" class="cards__anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="cards__carousel">
+                    <div class="card">
+                        <img src="img/face1.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Juan</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/face2.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Jose</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/face2.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Pedro</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/face2.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Sergio</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/face2.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Name</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="img/face2.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>Name</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
-                    </div>
-                </div>
+
+                <button aria-label="Anterior" class="cards__siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div role="tablist" class="cards__carousel__indicadores"></div>
             </div>
         </section>
         <section class="about-services">
@@ -219,6 +257,7 @@
         </div>
         <h2 class="titulo-final">Koya Web || 2020 </h2>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://kit.fontawesome.com/2d78e61024.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
