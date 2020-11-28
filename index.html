@@ -53,70 +53,41 @@
                 <div class="galeria-port">
                     <div class="imagen-port">
                         <img src="img/img1.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img2.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img3.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img1.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img4.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img5.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img6.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
                     </div>
                     <div class="imagen-port">
                         <img src="img/img7.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Nuestro trabajo</p>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!--OVERLAY-->
-        <section class="overlay">
+        
+        <section class="overlay" id="overlay">
             <div class="overlay__contenedor">
                 <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
-                <img src="img/img1.jpg" alt="">
+                <img src="" alt="">
             </div>
         </section>
+        
         <section class="clientes contenedor">
             <h2 class="titulo">Que dicen nuestros clientes</h2>
             <div class="cards">
@@ -158,47 +129,78 @@
                 </div>
             </div>
         </section>
-        <section class="contacto" id="contacto ">
-			<div class="contenedor-contacto-izq">
-				<div class="titulo-contacto">
-					<h6>Contacto</h6>
-				</div>
-				<div class="contacto-redesSociales">
-				  	<i class="far fa-envelope"></i> 			
-
-					<a href="https://www.instagram.com/kndsol__/" class="ig" target="_blank">
-						<i class="fab fa-instagram"></i>
-						@kndsol__
-					</a>	
-			    </div>
-		    </div>
-				
+        <!-- <section class="contacto" id="contacto ">
+            <div class="titulo-contacto">
+                <h6>Contacto</h6>
+            </div>		
 			<div class="contacto-contenido">
+                <div class="contenedor-contacto-izq">
+                    <div class="contacto-redesSociales">
+                          <i class="far fa-envelope"></i> 			
+    
+                        <a href="" class="ig" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>	
+                    </div>
+                </div>
 				<div class="formulario-contenido">
 					<form action="procesar.php" method="POST">
-						<label form="nombre">
-							Nombre: <input type="text" name="nombre" placeholder="Escriba aquí su nombre" id="nombre" maxlength="15" required autofocus autocomplete="on">	
-						</label>
+						<label form="nombre">Nombre: </label>
+							 <input type="text" name="nombre" placeholder="Escriba aquí su nombre" id="nombre" maxlength="15" required autofocus autocomplete="on">		
 							<br>
-						<label form="email">
-							Email: <input type="email" name="email" placeholder="example@gmail.com" id="email" required autofocus autocomplete="on">	
-						</label>
+						<label form="email">Email:</label>
+							 <input type="email" name="email" placeholder="example@gmail.com" id="email" required autofocus autocomplete="on">	
 							<br>
-						<label form="mensaje">
-							Mensaje: 
+						<label form="mensaje"> Mensaje: </label>	
 						<textarea name="mensaje" id="mensaje" autofocus required placeholder="¡Envíame tu consulta!"></textarea>
-						</label form="envio">
 							<br>
 						<input type="submit" value="Enviar" name="enviar" id="envio">
 						<div class="mensaje-form">
 						    <p>Escríbenos un mensaje, con gusto te responderemos a la brevedad </p>
 						</div>
-							
 					</form>
 				</div>
-			</div>
-			</div>
-		</section>
+            </div>
+        </section> -->
+        <div id="container">
+            <span class="input">
+              <input type="text" class="input__field" id="input-1" />
+              <label for="input-1" class="input__label">
+                <span class="input__label-content">First Name</span>
+            </label>
+            </span>
+          
+            <span class="input">
+              <input type="text" class="input__field" id="input-2" />
+              <label for="input-2" class="input__label">
+                <span class="input__label-content">Last Name</span>
+              </label>
+            </span>
+          
+            <span class="input">
+              <input type="text" class="input__field" id="input-3" />
+              <label for="input-3" class="input__label">
+                <span class="input__label-content">Phone Number</span>
+              </label>
+            </span>
+          
+            <span class="input">
+              <input type="text" class="input__field" id="input-4" />
+              <label for="input-4" class="input__label">
+                <span class="input__label-content">Email Address</span>
+              </label>
+            </span>
+          
+            <span class="input message">
+              <textarea class="input__field" id="input-5"></textarea>
+              <label for="input-5" class="input__label">
+                <span class="input__label-content">Message</span>
+              </label>
+            </span>
+          
+            <button id="send-button" type="button">Send</button>
+          
+          </div>          
     </main>
     <footer>
         <div class="contenedor-footer">
