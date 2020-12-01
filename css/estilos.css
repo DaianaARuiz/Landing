@@ -207,74 +207,26 @@ main .sobre-nosotros{
 }
 
 /* -------------------------------------------------CLIENTES------------------------------------------------ */
-.clientes{
-    position: relative; 
-}
-.cards{
-    position: relative;
-    z-index: -1;
-}
 
-.cards__carousel{
+.clientes__carousel__lista__elemento{
     display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+    background: var(--marron);
+    box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+}
+.clientes__carousel__lista__elemento img{
+    width: 40%;
+    height: 250px;
+    border-radius: 100%;
+}
+.clientes__carousel__lista__elemento h3{
+    font-size: 60px;
+}
+.clientes__carousel__lista__texto{
+    text-align: center;
+    padding: 5px;
 }
 
-.cards .cards__anterior,
-.cards .cards__siguiente{
-
-    display: block;
-    width: 30px;
-	height: 30px;
-	border: none;
-	top: calc(50% - 35px);
-	cursor: pointer;
-	line-height: 30px;
-	text-align: center;
-	background: none;
-	color: #4d0686;
-    opacity: 100%;
-    
-    z-index: 99;
-}
-
-.cards__anterior{
-    left: -30px;
-}
-
-.cards__siguiente{
-    right: -30px;
-}
-
-.cards .cards__carousel .card{
-    background: var(-rosita);
-    display: flex;
-    width: 46%;
-    height: 200px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
-}
-
-.cards .cards__carousel .card img{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    display: block;
-}
-
-.cards .cards__carousel .card > .contenido-texto-card{
-    width: 60%;
-    color: #fff;
-}
-
-.cards .cards__carousel .card > .contenido-texto-card p{
-    font-weight: 300;
-    padding-top: 5px;
-}
 /* -------------------------------------------------OVERLAY------------------------------------------------ */
 
 .overlay{

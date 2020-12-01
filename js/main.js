@@ -37,13 +37,13 @@ var labelContenido = document.querySelectorAll('.input__label-content');
 
 
 window.addEventListener('load', function(){
-    new Glider(document.querySelector('.cards_carousel'), {
+    new Glider(document.querySelector('.clientes__carousel__lista'), {
         slidesToShow: 1,
-        dots: '.cards_carousel__indicadores',
-        draggable: true,
+        slidesToScroll: 1,
+        dots : '.clientes__carousel__indicadores',
         arrows: {
-        prev: '.cards__anterior',
-        next: '.cards__siguiente'
+          prev: '.clientes__carousel__anterior',
+          next: '.clientes__carousel__siguiente'
         }
       });
 })
