@@ -1,9 +1,14 @@
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,500,700,800);
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
 :root{
     --marron : #968c83;
     --marroncito:#d6d2c4;
     --beige: #fff5ea;
     --rosita: #f7dad9;
+    --coral: #fe7171;
 }
 
 *{
@@ -24,11 +29,14 @@ body {
     overflow: hidden;
 }
 
-.titulo {
-    color: #642a73;
-    font-size: 30px;
+
+.titulo{
+    font-size: 40px;
     text-align: center;
     margin-bottom: 60px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 3.5px;
+    text-shadow: 3px 3px 2px rgba(150, 150, 122, 1);
 }
 
 /* -------------------------------------------------HEADER------------------------------------------------ */
@@ -38,9 +46,9 @@ header {
     height: 600px;
     background: #c6b497;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/portada02.jpg);
+    background: -webkit-linear-gradient(to right, hsla(47, 18%, 80%,  0.459), hsla(28, 8%, 55%, 0.664)), url(../img/portada02.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/portada02.jpg);
+    background: linear-gradient(to right, hsla(47, 18%, 80%,  0.459), hsla(28, 8%, 55%, 0.664)), url(../img/portada02.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -62,6 +70,7 @@ nav > a{
 
 nav > a:hover{
     text-decoration: underline;
+    text-decoration-color:var(--coral);
 }
 
 header .textos-header{
@@ -101,7 +110,9 @@ main .sobre-nosotros{
     display: flex;
     justify-content: space-evenly;
 }
-
+.sobre-nosotros .titulo{
+    color:var(--marroncito);
+}
 .imagen-about-us{
     width: 48%;
 }
@@ -115,8 +126,8 @@ main .sobre-nosotros{
 }
 
 .contenido-textos h3 span{
-    background: #4d0686;
-    color: #fff;
+    background: var(--coral);
+    color: var(--marroncito);
     border-radius: 50%;
     display: inline-block;
     text-align: center;
@@ -137,9 +148,15 @@ main .sobre-nosotros{
 
 
 .portafolio{
-    background: #f2f2f2;
+    background:var(--marroncito);
 }
 
+.portafolio .titulo{
+    /* text-shadow: 3px 3px 2px rgba(150, 150, 122, 1); */
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 3px;
+    color:var(--beige);
+}
 .galeria-port{
     display: flex;
     justify-content: space-evenly;
@@ -305,6 +322,7 @@ main .sobre-nosotros{
 .about-services{
     background: #f2f2f2;
     padding-bottom: 30px;
+    height: 100vh;
 }
 
 
@@ -332,204 +350,47 @@ main .sobre-nosotros{
     text-align: justify;
 }
 
-/* -------------------------------------------------CONTACTO------------------------------------------------ */
-/*
-.contacto{
-	width:100%;
-	height: 95vh;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: wrap;
+/*****************************************************CONTACTO***********************************************************/
+#contacto{
+    display:flex;  
 }
 
-.contenedor-contacto-izq{
-	width: 25%;
-	height: 40em;
-	display: flex;
-	flex-direction: column;
-	align-items: space-around;
-	/* position: relative; 
-}
-
-.titulo-contacto{
-    display:block;
-    width:100%;
-	color: black;
-	text-align: center;
-	margin: 20px 0;
-}
-
-.titulo-contacto h6{
-    font: 3em Balsamiq Sans, cursive;
-}
-
-.contacto-redesSociales{
-	width: 100%;
-	height: 300px;
-	display: flex;
-	flex-direction: column;
-    justify-content: center;
-}
-.contacto-redesSociales i{
-	width: 60px;
- 	height: 60px;
- 	font-size: 40px;
- 	line-height: 1.6;
- 	margin-bottom:30px;
-	text-align: center;
-	color: black;
-	background-color: var(--rosa);
-	
-	border-radius: 50%;
-	-webkit-box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
- 	box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
-
-}
-
-.contacto-redesSociales i:hover{ 
-    background: var(--violeta);
-}
-
-.contacto-contenido{
-    width: 100%;
+.contacto_redes{
+    width:20%;
     height: 95vh;
-    margin: auto;
-    background: var(--marroncito);
-    padding:30px;
-    border: 1.5px solid var(--marroncito);
+    background-color:var(--marron);
+    border:dotted 3px var(--beige);
     display:flex;
-    justify-content:space-between;
+    flex-direction: column;
+    align-items:center;
+    text-shadow: -3px 7px 3px rgba(163, 150, 150, 1);
+    /* text-shadow: -2px -2px 3px rgba(163, 150, 150, 0.66); */
+    color:var(--beige);
 }
 
-.formulario-contenido {
-	height: 500px;
-	width: 100%;
+.contacto_redes p{
+    font-size:2.1em;
+    margin:40px;
+    font-family: 'Abril Fatface', cursive; 
 }
-
-form{height: 500px}
-
-label{
- 	color: var(--marron);
-     margin: 30px 0px 10px 150px;
-} 
-
-
-input{
-    display: block;
-    color:var(--marron);
-    width: 50%;
-    height: 40px;
-    border-radius: 24px;
-    outline: none;
-    border:1.5px solid var(--marron);
-    text-align: center;
-    font-size: 18px;
-    color: var(--black);
-}
-
-textarea{
-        resize: none;
-        width:50%;
-        height: 150px;
-        margin:auto 15px;
-        border-radius: 24px;
-        border:1.5px solid var(--marroncito);
-        outline:none;
-}
-
-textarea::placeholder{
-    font: 18px Balsamiq Sans, cursive;
-    padding: 0 15px;
-}
-
-input::placeholder{
-	font: 18px Balsamiq Sans, cursive;
-	padding: 10px;
-}
-
-.mensaje-form{
-	text-align: center;
-	margin-top: 15px;
-}
-
-#envio{
-	width:40%;
-	height:40px;
-	padding:5px;
-	background-color: var(--marron);
-	color:white;
-	font: bold 16px Balsamiq Sans, cursive;
-    border-radius: 24px;
-}
-
-#envio:hover{
-	background-color: var(--beige);
-	color:var(--rosita);
-	transition: 0.3s;
-}
-*/
-/* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#envio{
-	width:40%;
-	height:40px;
-	padding:5px;
-	background-color: var(--marron);
-	color:white;
-	font: bold 16px Balsamiq Sans, cursive;
-    border-radius: 24px;
-}
-
-#envio:hover{
-	background-color: var(--rosita);
-	color:var(--rosita);
-	transition: 0.3s;
-}
-
-*/
-
  
- @import url(https://fonts.googleapis.com/css?family=Raleway:200,500,700,800);
+.contacto_redes i{
+    font-size:2.7em;
+    margin:25px;
+    color:var(--coral);
+}
 
- 
- /* *,
- *:after,
- *:before {
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
- }
-  */
- /* body {
-   background: #111;
-   font-weight: 500;
-   font-size: 1.05em;
-   font-family: 'Raleway', Arial, sans-serif;
- } */
- 
- #container {
+.contacto_redes i:hover{
+    font-size:2.8em;
+}
+ #contacto_contenedorFormulario {
     background: var(--beige);
+    border-style:dotted;
+    border-width:3px;
+    border-color:var(--marron);;
     font-size: 1.05em;
     width:80%;
     height: 95vh;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -578,7 +439,7 @@ input::placeholder{
    margin: 1.2em 0;
    width: 100%;
    height: calc(100% - 2.4em);
-   color: #6a7989;
+   color:var(--marron);
    font-weight: bold;
    font-size: 70.25%;
    -webkit-font-smoothing: antialiased;
@@ -607,7 +468,7 @@ input::placeholder{
    left: 0;
    width: 100%;
    height: 2px;
-   background: #6a7989;
+   background:var(--marron);
    -webkit-transition: -webkit-transform 0.3s;
    transition: transform 0.3s;
  }
@@ -641,8 +502,8 @@ input::placeholder{
  #send-button {
    width: 200px;
    height: 60px;
-   background-color: #6a7989;
-   color: #000;
+   background-color: var(--marron);
+   color:var(--beige);
    border: 0;
    font-weight: bold;
    font-size: 70.25%;
@@ -655,8 +516,11 @@ input::placeholder{
  #send-button:hover,
  #send-button:focus {
    outline: 0;
-   background-color: #ffcc00;
-   color: #000;
+   border-color: var(--marron);
+   border-width: 1px;
+   border-style:solid;
+   background-color:var(--coral);
+   color:var(--beige);
    -webkit-transition: -webkit-transform 0.3s;
    transition: transform 0.3s;
  }
@@ -686,7 +550,7 @@ footer{
 .content-foo h4{
     color: #fff;
     border-bottom: 3px solid;
-    border-bottom-color:var(---rosita);
+    border-bottom-color:var(--coral);
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
