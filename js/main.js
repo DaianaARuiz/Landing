@@ -40,10 +40,7 @@ window.addEventListener('load', function(){
     new Glider(document.querySelector('.clientes__carousel__lista'), {
         slidesToShow: 1,
         slidesToScroll: 1,
+        draggable: true,
         dots : '.clientes__carousel__indicadores',
-        arrows: {
-          prev: '.clientes__carousel__anterior',
-          next: '.clientes__carousel__siguiente'
-        }
       });
 })
