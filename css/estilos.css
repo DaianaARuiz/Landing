@@ -322,7 +322,7 @@ main .sobre-nosotros{
 .about-services{
     background: #f2f2f2;
     padding-bottom: 30px;
-    height: 100vh;
+    color:var(--marron);
 }
 
 
@@ -330,15 +330,21 @@ main .sobre-nosotros{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .servicio-ind{
-    width: 28%;
+    width: 30%;
+    /* height:300px; */
+    padding:30px;
     text-align: center;
+    border:1px, solid var(--coral);
+    box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
 }
 
 .servicio-ind img{
-    width: 90%;
+    width: 80%;
 }
 
 .servicio-ind h3{
@@ -364,7 +370,6 @@ main .sobre-nosotros{
     flex-direction: column;
     align-items:center;
     text-shadow: -3px 7px 3px rgba(163, 150, 150, 1);
-    /* text-shadow: -2px -2px 3px rgba(163, 150, 150, 0.66); */
     color:var(--beige);
 }
 
@@ -697,5 +702,24 @@ footer{
 
     .titulo-final{
         font-size: 20px;
+    }
+}
+
+
+@media (max-width:360px){
+
+    .contacto{
+        display:block;
+    }
+    .contacto_contenedorFormulario{
+        width:100%;
+    }
+
+    .contacto_redes{
+        width:100%;
+        height:auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }

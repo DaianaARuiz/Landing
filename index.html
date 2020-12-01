@@ -167,39 +167,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="contacto" id="contacto ">
-            <div class="titulo-contacto">
-                <h6>Contacto</h6>
-            </div>		
-			<div class="contacto-contenido">
-                <div class="contenedor-contacto-izq">
-                    <div class="contacto-redesSociales">
-                          <i class="far fa-envelope"></i> 			
-    
-                        <a href="" class="ig" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>	
-                    </div>
-                </div>
-				<div class="formulario-contenido">
-					<form action="procesar.php" method="POST">
-						<label form="nombre">Nombre: </label>
-							 <input type="text" name="nombre" placeholder="Escriba aquí su nombre" id="nombre" maxlength="15" required autofocus autocomplete="on">		
-							<br>
-						<label form="email">Email:</label>
-							 <input type="email" name="email" placeholder="example@gmail.com" id="email" required autofocus autocomplete="on">	
-							<br>
-						<label form="mensaje"> Mensaje: </label>	
-						<textarea name="mensaje" id="mensaje" autofocus required placeholder="¡Envíame tu consulta!"></textarea>
-							<br>
-						<input type="submit" value="Enviar" name="enviar" id="envio">
-						<div class="mensaje-form">
-						    <p>Escríbenos un mensaje, con gusto te responderemos a la brevedad </p>
-						</div>
-					</form>
-				</div>
-            </div>
-        </section> -->
         <section id="contacto">
             <div class="contacto_redes">
                 <p>¡Seguinos en nuestras redes!</p>
@@ -207,44 +174,43 @@
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
             </div>
-            <div id="contacto_contenedorFormulario">
-                <span class="input">
+            <form method="POST" id="contacto_contenedorFormulario">
+                <div class="input">
                   <input type="text" class="input__field" id="input-1" />
                   <label for="input-1" class="input__label">
-                    <span class="input__label-content">First Name</span>
+                    <span class="input__label-content">Nombre</span>
                 </label>
-                </span>
+            </div>
               
-                <span class="input">
+                <div class="input">
                   <input type="text" class="input__field" id="input-2" />
                   <label for="input-2" class="input__label">
-                    <span class="input__label-content">Last Name</span>
+                    <span class="input__label-content">Apellido</span>
                   </label>
-                </span>
+                </div>
               
-                <span class="input">
+                <div class="input">
                   <input type="text" class="input__field" id="input-3" />
                   <label for="input-3" class="input__label">
-                    <span class="input__label-content">Phone Number</span>
+                    <span class="input__label-content">Celular</span>
                   </label>
-                </span>
+                </div>
               
-                <span class="input">
+                <div class="input">
                   <input type="text" class="input__field" id="input-4" />
                   <label for="input-4" class="input__label">
-                    <span class="input__label-content">Email Address</span>
+                    <span class="input__label-content">Email</span>
                   </label>
-                </span>
+                </div>
               
-                <span class="input message">
+                <div class="input message">
                   <textarea class="input__field" id="input-5"></textarea>
                   <label for="input-5" class="input__label">
-                    <span class="input__label-content">Message</span>
+                    <span class="input__label-content">Mensaje</span>
                   </label>
-                </span>
-              
+                </div>
                 <button id="send-button" type="button">Send</button>
-              </div>          
+            </form>          
         </section>
         
     </main>
