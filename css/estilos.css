@@ -325,11 +325,10 @@ main .sobre-nosotros{
 
 .contacto__content{
     display:flex;
+    padding:50px;
 }
 .contacto_redes{
     width:20%;
-    height: 95vh;
-    border:dotted 3px var(--marron);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -358,13 +357,16 @@ main .sobre-nosotros{
     font-size:2.6em;
 }
 
+.contacto_links{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    padding-bottom:60px;
+}
+
  #contacto_contenedorFormulario {
-    border-style:dotted;
-    border-width:3px;
-    border-color:var(--marron);;
     font-size: 1.05em;
     width:80%;
-    height: 95vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -416,11 +418,6 @@ main .sobre-nosotros{
    font-size: 70.25%;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   -webkit-touch-callout: none;
-   -webkit-user-select: none;
-   -khtml-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
    user-select: none;
  }
  
@@ -481,8 +478,7 @@ main .sobre-nosotros{
    font-size: 70.25%;
    text-transform: uppercase;
    letter-spacing: 4px;
-   -webkit-transition: -webkit-transform 0.3s;
-   transition: transform 0.3s;
+   transition:all 0.5s ease-out;
  }
  
  #send-button:hover,
@@ -493,8 +489,6 @@ main .sobre-nosotros{
    border-style:solid;
    background-color:var(--coral);
    color:var(--beige);
-   -webkit-transition: -webkit-transform 0.3s;
-   transition: transform 0.3s;
  }
 
  
@@ -597,20 +591,29 @@ footer{
     }
     /* -------------------------------------------------CONTACTO------------------------------------------------ */
     .contacto__content{
-        flex-direction:column-reverse;
+        flex-direction:column;
 
     }
 
     .contacto_redes{
         align-items:center;
         height: auto;
-        flex-direction: row;
+        /* flex-direction: row; */
         justify-content: center;
-        align-items: center;
+
     }
 
     .contacto_redes .titulo{
-        display:none;
+        line-height:4;
+        align-self:center;
+        margin-bottom: 0;
+    }
+    
+    .contacto_links{
+        width: 100%;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
     }
 
     .contacto_redes p{
@@ -623,7 +626,7 @@ footer{
     }
 
     #contacto_contenedorFormulario{
-        padding:40px;
+        padding:10px;
         width:100%;
     }
 
@@ -692,35 +695,26 @@ footer{
 
     /* Clients */
 
-    /* .cards .card{
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .clientes__carousel__lista__elemento{
+        padding: 40px 0;
+        flex-direction:column;
     }
 
-    .cards .card img{
-        width: 90px;
-        height: 90px;
-    } */
+    .clientes__carousel__lista__elemento img {
+         width: 60%;
+         margin:20px auto;
+    }
 
+    .clientes__carousel__lista__texto{
+        width: 100%;
+        padding: 0px 20px 35px 20px;
+    }
 }
 
 
 @media (max-width:360px){
 
-    .contacto{
-        display:block;
-    }
     .contacto_contenedorFormulario{
         width:100%;
-    }
-
-    .contacto_redes{
-        width:100%;
-        height:auto;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
     }
 }

@@ -11,40 +11,30 @@
       href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"
     />
     <link rel="stylesheet" href="css/estilos.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"/>
   </head>
 
   <body>
   <header>
       <nav>
         <a href="#">Inicio</a>
-        <a href="#">Acerca de</a>
+        <a href="#about">Acerca de</a>
         <a href="#portafolio">Portafolio</a>
-        <a href="#serv">Servicios</a>
-        <a href="#">Contacto</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
       </nav>
       <section class="textos-header">
         <h1>Todo está diseñado. Pocas cosas están bien diseñadas.</h1>
         <h2>Agencia de diseño</h2>
       </section>
       <div class="wave" style="height: 150px; overflow: hidden">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          style="height: 100%; width: 100%"
-        >
-          <path
-            d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-            style="stroke: none; fill: #fff"
-          ></path>
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+          <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff"></path>
         </svg>
       </div>
   </header>
   <main>
-      <section class="contenedor sobre-nosotros">
+      <section id="about" class="contenedor sobre-nosotros">
         <h2 class="titulo">Nuestro producto</h2>
         <div class="contenedor-sobre-nosotros">
           <img src="img/ilustracion2.svg" alt="" class="imagen-about-us" />
@@ -99,7 +89,6 @@
     </section>
 
       <!--OVERLAY-->
-
       <section class="overlay" id="overlay">
         <div class="overlay__contenedor">
           <button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
@@ -114,7 +103,7 @@
           <div class="clientes__carousel__lista">
 
             <div class="clientes__carousel__lista__elemento">
-              <img src="img/face1.jpg" alt="" />
+              <img src="img/face2.jpg" alt="" />
               <div class="clientes__carousel__lista__texto">
                 <h3>Laura</h3>
                 <p>"Me gustó mucho el producto."</p>
@@ -124,13 +113,13 @@
             <div class="clientes__carousel__lista__elemento">
               <img src="img/face1.jpg" alt="" />
               <div class="clientes__carousel__lista__texto">
-                <h3>María</h3>
-                <p>"Quedé satisfecha. Lo recomiendó."</p>
+                <h3>Marcelo</h3>
+                <p>"Quedé satisfecha. Lo recomiendo."</p>
               </div>
             </div>
 
             <div class="clientes__carousel__lista__elemento">
-              <img src="img/face1.jpg" alt="" />
+              <img src="img/face3.jpg" alt="" />
               <div class="clientes__carousel__lista__texto">
                 <h3>Carlos</h3>
                 <p>"Muy recomendado."</p>
@@ -141,7 +130,7 @@
           <div role="tablist" class="clientes__carousel__indicadores"></div>
         </div>
       </section>
-      <section class="about-services">
+      <section id="servicios"class="about-services">
         <div class="contenedor">
           <h2 class="titulo">Nuestros servicios</h2>
           <div class="servicio-cont">
@@ -172,18 +161,17 @@
           </div>
         </div>
       </section>
-
-
       <section id="contacto">
-
         <div class="contacto__content">  
           <div class="contacto_redes">
             <div class="titulo">
               <h6>Contacto</h6>
             </div>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
+            <div class="contacto_links">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
             <p>¡Seguinos en nuestras redes!</p>
         </div>
 
@@ -225,7 +213,7 @@
 
   </main>
 
-    <footer>
+  <footer>
       <div class="contenedor-footer">
         <div class="content-foo">
           <h4>Teléfono</h4>
@@ -243,10 +231,7 @@
       <h2 class="titulo-final">Koya Web || 2020</h2>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/2d78e61024.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/2d78e61024.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -18,23 +18,7 @@ overlay.addEventListener('click', (evento) =>{
     evento.target.id === 'overlay' ? overlay.classList.remove('activo') : '';
 });
 
-//-------------------------------FORMULARIO-----------------------------------------//
-
-var label = document.querySelectorAll('.input__label');
-var input = document.querySelectorAll('.input__field');
-var labelContenido = document.querySelectorAll('.input__label-content');
-
-// input.addEventListener('blur', (evento) =>{
-//     if(evento.target.value.trim() !== ''){
-//         label.no-after;
-//     }else{
-//         ''
-//     }
-// });
-
-
 //-------------------------------CAROUSEL DE CLIENTES-----------------------------------------//
-
 
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.clientes__carousel__lista'), {
